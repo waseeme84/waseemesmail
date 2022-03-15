@@ -285,4 +285,7 @@ section{
 	.main-content h3{
 		font-size: 1.4em;
 	}
+	.navigation a{
+		font-size: 0.8em;
+	}
 }
