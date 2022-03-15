@@ -25,7 +25,7 @@ header {
 	text-decoration: none; /*to remove the line under text */
 	color: #3a6cf4;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 1.8em;
 
 
@@ -274,18 +274,43 @@ section{
 	.main-content h3{
 		font-size: 1.4em;
 	}
+	.main-img{
+		width: 500px;
+		height: 500px;
+	}
+	.main h2 span{
+		font-size: 1.8em;
+	}
+	.main h3{
+		font-size: 1.3em;
+	}
+	.social-icon a{
+		font-size: 1.5em;
+		padding-right: 20px;
+
+	}
+	.navigation a{
+		font-size: 1em;
+		font-weight: 300px;
+	}
+	.footer-title{
+		font-size: 1.2em;
+		font-weight: 400px;
+
+	}
+	.footer .ssocial-icon a{
+		font-size: 8em;
+		padding: 0 8px 0 0;
+	}
+
 }
-@media (max-width: 300px){
+
+@media (max-width: 280px){
 	body{
 		font-size: 10px;
 	}
-	.main-content h2{
-		font-size: 0.8em;
-	}
-	.main-content h3{
-		font-size: 1.4em;
-	}
-	.navigation a{
-		font-size: 0.8em;
+	.main-img{
+		width: 100px;
+		height: 100px;
 	}
 }
