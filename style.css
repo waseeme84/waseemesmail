@@ -279,4 +279,10 @@ section{
 	body{
 		font-size: 10px;
 	}
+	.main-content h2{
+		font-size: 0.8em;
+	}
+	.main-content h3{
+		font-size: 1.4em;
+	}
 }
