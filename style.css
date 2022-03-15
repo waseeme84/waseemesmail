@@ -218,6 +218,11 @@ section{
 .contact .info h3{
 	color: #000;
 }
+#email-text{
+	font-size: 1.2em;
+	align-items: 	center	;
+
+	} 
 .contact .info p{
 	font-size: 1.5em;
 }
