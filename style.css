@@ -273,6 +273,9 @@ section{
 	body{
 		font-size: 12px;
 	}
+	.logo{
+		font-size:0.8em
+	}
 	.main-content h2{
 		font-size: 0.8em;
 	}
@@ -317,5 +320,8 @@ section{
 	.main-img{
 		width: 100px;
 		height: 100px;
+	}
+	.logo{
+		font-size:0.8em
 	}
 }
