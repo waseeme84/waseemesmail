@@ -254,7 +254,7 @@ section{
 	padding: 0 12px 0 0;
 }
 .line1{
-	color:yellow;
+	color: #F5B922; 
 }
 @media (max-width: 1023px){
 	header{
