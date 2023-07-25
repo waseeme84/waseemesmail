@@ -128,8 +128,8 @@ section{
 }
 .title1 {
 	display: flex;
-	justify-content: right;
-	color: #3a6cf4;
+	justify-content: lift;
+	color: #F5538A;
 	font-size: 1.5em;
 	font-weight: 800;
 	margin-bottom: 30px;
