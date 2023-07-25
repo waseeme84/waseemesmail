@@ -135,6 +135,10 @@ section{
 	margin-bottom: 30px;
 
 }
+.line1  {
+	color: blue; 
+	size: 2em;
+}
 .content{
 	display: flex;
 	justify-content: center;
@@ -253,10 +257,7 @@ section{
 	font-size: 1.3em;
 	padding: 0 12px 0 0;
 }
-.line1{
-	color: blue; 
-	size: 2em;
-}
+
 @media (max-width: 1023px){
 	header{
 		padding: 12px 20px;
