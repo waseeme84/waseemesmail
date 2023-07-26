@@ -349,9 +349,5 @@ section{
 		flex-direction: column;
 		align-items: center;
 	}
-	.card{
-	 max-width: 280px;
-	 width: 100%;	
-	}
 }
 
