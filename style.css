@@ -331,7 +331,8 @@ section{
 
 @media (max-width: 280px){
 	header{
-		flex-direction: column;
+	 max-width: 280px;
+	 width: 100%;
 	}
 	body{
 		font-size: 10px;
