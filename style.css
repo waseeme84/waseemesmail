@@ -330,6 +330,9 @@ section{
 }
 
 @media (max-width: 280px){
+	header{
+		flex-direction: column;
+	}
 	body{
 		font-size: 10px;
 	}
@@ -343,8 +346,6 @@ section{
 	.navigation a{
 		font-size: 0.8em;
 		font-weight: 200px;
-		flex-direction: column;
-		align-items: center;
 	}
 
 	.content{
