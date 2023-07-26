@@ -135,10 +135,6 @@ section{
 	margin-bottom: 30px;
 
 }
-.line1  {
-	color: blue; 
-	size: 2em;
-}
 .content{
 	display: flex;
 	justify-content: center;
