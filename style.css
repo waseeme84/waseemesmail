@@ -322,6 +322,10 @@ section{
 		font-size: 0.8em;
 		padding: 0 1px 0 0;
 	}
+	.content{
+		flex-direction: column;
+		align-items: center;
+	}
 
 }
 
@@ -336,13 +340,14 @@ section{
 	.logo{
 		font-size:1em
 	}
-		}
 	.navigation a{
 		font-size: 0.8em;
 		font-weight: 200px;
-}
-.content{
+	}
+
+	.content{
 		flex-direction: column;
 		align-items: center;
 	}
+}
 
