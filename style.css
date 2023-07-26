@@ -342,10 +342,10 @@ section{
 		height: 100px;
 	}
 	.logo{
-		font-size:1em
+		font-size:0.5em
 	}
 	.navigation a{
-		font-size: 0.8em;
+		font-size: 0.5em;
 		font-weight: 200px;
 	}
 
