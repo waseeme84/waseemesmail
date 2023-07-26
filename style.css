@@ -331,6 +331,9 @@ section{
 }
 
 @media (max-width: 280px){
+	header{
+		padding: 8px 16px;
+	}
 	body{
 		font-size: 10px;
 	}
