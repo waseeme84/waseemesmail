@@ -341,5 +341,8 @@ section{
 		font-size: 0.8em;
 		font-weight: 200px;
 }
-
+.content{
+		flex-direction: column;
+		align-items: center;
+	}
 
