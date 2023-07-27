@@ -342,11 +342,15 @@ section{
 		height: 100px;
 	}
 	.main-btn {
-		width: 20px;
-		height: 10px;
+		width: 70px;
+		height: 40px;
 	}
 	.logo{
 		font-size:0.5em
+	}
+	.card{
+		width: 200px;
+		height: 240px;
 	}
 	.navigation a{
 		font-size: 0.5em;
