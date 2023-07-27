@@ -305,6 +305,10 @@ section{
 	.main h3{
 		font-size: 1.3em;
 	}
+	.card{
+		width: 200px;
+		height: 240px;
+	}
 	.social-icon a{
 		font-size: 1.5em;
 		padding-right: 20px;
@@ -353,12 +357,14 @@ section{
 		height: 240px;
 	}
 	.navigation a{
-		font-size: 0.5em;
+		font-size: 0.3em;
 		font-weight: 200px;
 	}
 
 	.content{
+		flex-direction: column;
 		align-items: center;
+		
 	}
 }
 
