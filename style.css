@@ -346,7 +346,7 @@ section{
 		width: 125px;
 		height: 125px;
 		margin-left: 28px;
-		margin-BOTTOM: 20px;
+		margin-BOTTOM: -9px;
 	}
 	.main h2 span {
   		font-size: 1.5em;
@@ -371,7 +371,7 @@ section{
 		height: 200px;
 	}
 	.navigation a{
-		font-size: 0.5em;
+		font-size: 0.6em;
 		font-weight: 300px;
 	}
 
