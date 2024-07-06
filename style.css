@@ -72,7 +72,7 @@ section{
 	display: inline-block;
 	margin-top: 35px;
 	margin-bottom: 18px;
-	color: #8E0209;
+	color: ##990000;
 	font-size: 2em;
 	font-weight: 600;
 }
@@ -159,7 +159,7 @@ section{
 	transform: scale(1.1);
 }
 .icon{
-	color: #0300a9;
+	color: ##990000;
 	font-size: 5em;
 	text-align: center;
 
