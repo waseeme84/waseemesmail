@@ -15,6 +15,7 @@ a {
   text-decoration: none;
 }
 #backToTop {
+  display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -26,7 +27,6 @@ a {
   padding: 10px 14px;
   border-radius: 50%;
   cursor: pointer;
-  display: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s;
 }
@@ -34,6 +34,7 @@ a {
 #backToTop:hover {
   background-color: #0a49f6;
 }
+
 
 .container {
   width: 90%;
