@@ -26,6 +26,13 @@ a {
   top: 0;
   z-index: 1000;
 }
+.divider {
+  height: 4px;
+  background: linear-gradient(to right, #3a6cf4, #990000);
+  border-radius: 2px;
+  margin: 4em auto;
+  width: 60%;
+}
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
