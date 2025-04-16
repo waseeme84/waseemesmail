@@ -239,5 +239,20 @@
   <button onclick="scrollToTop()" id="backToTop" title="Go to top">
   <i class="fas fa-arrow-up"></i>
 </button>
+  <script>
+  const topBtn = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 </body>
 </html>
