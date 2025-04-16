@@ -1,384 +1,250 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-*{
-	font-family: 'Poppins', sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a1120;
+  color: #fff;
 }
 
 header {
-	background-color: #0a1120;
-	width: 100%;
-	/*To keep the header visible when moving the page*/ 
-	position: fixed;
-	z-index: 999;
-	display: flex;
-	/* to make a distance between items*/
-	justify-content: space-between;
-	align-items: ceter;
-	padding: 10px 200px;
-
+  background-color: #0a1120;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
 }
-.logo{
-	text-decoration: none; /*to remove the line under text */
-	color: #3a6cf4;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 1.3em;
 
-
+.logo {
+  color: #3a6cf4;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-decoration: none;
 }
+
 .navigation a {
-	color: #3a6cf4;
-	text-decoration: none;
-	font-size: 1.1em;
-	font-weight: 500;
-	padding-left: 30px;
-
-}
-/*to change the bg text when we stop mouse on it*/
-/*doesn't work , i weel see it later*/
-.navigation a:hover{ 
-	color: #601cfc;
-
+  color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
-section{
-	padding: 100px 200px;
-	background-color: #0a1120;
-
-}
-.main{
-	width: 100%;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	background: url(images/للموقع1.jpg) no-repeat;
-	background-size: cover;
-	background-position:  center;
-	background-attachment: fixed;
+.navigation a:hover {
+  color: #601cfc;
 }
 
-
-.main h2 {
-	color: #ffffff;
-	font-size: 1.4em;
-	font-weight: 500 ;
+section {
+  padding: 100px 5%;
 }
-/*span is inline elemante , so we can't do margin top or bottom , to do that : we need to make the span inline-block*/
-.main h2 span {
-	display: inline-block;
-	margin-top: 35px;
-	margin-bottom: 18px;
-	color: #990000;
-	font-size: 2em;
-	font-weight: 600;
-}
-.main h3{
-	color: #fff;
-	font-size: 2em;
-	font-weight: 700;
-	letter-spacing: 1px;/*the speacing between the word*/
-	margin-top: 10px;
-	margin-bottom: 30px;
 
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: url(images/للمو8.jpg) no-repeat center/cover fixed;
+  min-height: 100vh;
+}
+
+.main-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+}
+
+.main h1 {
+  font-size: 2.5em;
+  color: #990000;
+  margin-bottom: 10px;
+}
+
+.main-description {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .main-btn {
-	color: white;
-	background-color: #3a6cf4;
-	text-decoration: none;
-	font-size: 1.1em;
-	font-weight: 600;
-	display: inline-block;
-	padding: 0.9375em 2.1875em;
-	letter-spacing: 1px;
-	border-radius: 15px;
-	margin-bottom: 40px;
-	margin-left: 45px;
-	transition: 0.7s ease;
-
+  background-color: #3a6cf4;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.main-btn:hover{
-	background-color: #0a49f6;
-	transform: scale(1.1);/*effect for make the bottom big when we click*/
-
-
+.main-btn:hover {
+  background-color: #0a49f6;
+  transform: scale(1.05);
 }
-.main-img {
-	width: 300px;
-	height: 300px;
-	border-radius: 50em;
 
-	
+.social-icon a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
-.social-icon a{
-	color: #fff;
-	font-size: 1.7em;
-	padding-right: 40px;
+
+.social-icon a:hover {
+  color: #3a6cf4;
 }
+
 .title {
-	display: flex;
-	justify-content: center;
-	color: #990000;
-	font-size: 2.2em;
-	font-weight: 800;
-	margin-bottom: 30px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #990000;
+  margin-bottom: 30px;
+}
 
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.title1 {
-	display: flex;
-	justify-content: lift;
-	color: #F5538A;
-	font-size: 1.5em;
-	font-weight: 800;
-	margin-bottom: 30px;
 
+.card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
-.content{
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
 
+.card:hover {
+  transform: translateY(-10px);
 }
-.card{
-	background-color: #fff;
-	width: 50em;
-	box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
-	border-radius: 30px;
-	padding: 25px;
-	margin: 15px;
-	transition: 0.7s ease;
 
-} 
-.card:hover{
-	transform: scale(1.1);
-}
-.icon{
-	color: #990000;
-	font-size: 5em;
-	text-align: center;
-
-}
-.info {
-	text-align: center;
-}
-.info h3{
-	color: #3a6cf4;
-	font-size: 1.2em;
-	font-weight: 700;
-	margin: 10px;
+.icon {
+  font-size: 3em;
+  color: #990000;
+  margin-bottom: 15px;
 }
 
 .projects {
-	background-color: #000016;
-
+  background-color: #000016;
 }
 
-.projects.content{
-	margin-top: 30px;
+.project-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
 }
-.project-card{
-	background-color: #fff;
-	border: 1px sold white;
-	min-height: 14em;
-	width: 23em;
-	overflow: hidden;
-	border-radius: 10px;
-	margin: 20px;
-	transition: 0.7 ease;
 
-}
 .project-card:hover {
-	transform: scale(1.1);
+  transform: scale(1.05);
 }
-.project-card:hover .project-image{
-	opacity: 0.9;
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.project-image img{
-	width: 100% ;
-}
+
 .project-info {
-	padding: 1em;
-}
-.project-category{
-	font-size: 0.8em;
-	color: #000;
-}
-.project-title{
-	display: flex;
-	justify-content: space-between;
-	text-transform: uppercase;
-	font-weight: 800;
-	margin-top: 10px;
-}
-.more-details{
-	text-decoration: none;
-	color: #3a6cf4;
-}
-.more-details:hover{
-	color: #601cfc;
-}
-.contact .icon{
-	font-size: 4.5em;
-
-}
-.contact .info h3{
-	color: #000;
-}
-#email-text{
-	font-size: 1.2em;
-	align-items: 	center	;
-
-	} 
-.contact .info p{
-	font-size: 1.5em;
-}
-.footer{
-	background-color: #3b090a;
-	color: #fff;
-	padding: 2em;
-	display: flex;
-	justify-content: space-between;
-}
-.footer-title{
-	font-size: 1.3em;
-	font-weight: 600;
-}
-.footer-title span{
-	color: #3a6cf4;
-}
-.footer .social-icon a{
-	font-size: 1.3em;
-	padding: 0 12px 0 0;
+  padding: 15px;
 }
 
-@media (max-width: 1023px){
-	header{
-		padding: 12px 20px;
-	}
-	.navigation a{
-		padding-left: 10px;
-	}
-	.title{
-		font-size: 1.8em;
-	}
-	section{
-		padding: 80px 20px;
-	}
-	.main-content h2{
-		font-size: 1em;
-	}
-	.main-content h3{
-		font-size: 1.6em;
-	}
-	.content{
-		flex-direction: column;
-		align-items: center;
-	}
-
-}
-@media(max-width: 641px){
-	body{
-		font-size: 12px;
-	}
-	.logo{
-		font-size:1em
-	}
-	.main-content h2{
-		font-size: 0.8em;
-	}
-	.main-content h3{
-		font-size: 1.4em;
-	}
-	.main-img{
-		width: 100px;
-		height: 100px;
-	}
-	.main h2 span{
-		font-size: 1.8em;
-	}
-	.main h3{
-		font-size: 1.3em;
-	}
-	.card{
-		width: 200px;
-		height: 240px;
-	}
-	.social-icon a{
-		font-size: 1.5em;
-		padding-right: 20px;
-
-	}
-	.navigation a{
-		font-size: 0.8em;
-		font-weight: 200px;
-	}
-	.footer-title{
-		font-size: 0.8em;
-		font-weight: 300px;
-
-	}
-	.footer .social-icon a{
-		font-size: 0.8em;
-		padding: 0 1px 0 0;
-	}
-	.content{
-		flex-direction: column;
-		align-items: center;
-	}
-
+.project-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (max-width: 400px){
-	header{
-		padding: 8px 16px;
-		font-weight: 300;
-	}
-	body{
-		font-size: 10px;
-	}
-	.main-img{
-		width: 100px;
-		height: 100px;
-		margin-left: 28px;
-		margin-BOTTOM: -9px;
-	}
-	.main h2 span {
-  		font-size: 1.5em;
-		margin-left: 13px;
-	}
-	.main-btn{
-		width:3em
-		height:1.3em
-		margin-bottom: 30px;
-    		margin-left: 28px;
-	}
-	.logo{
-		font-size:0.5em
-		font-weight: 600;
-	}
-	.card{
-		width: 233px;
-		height: 246px;
-	}
-	#card-e{
-		width: 200px;
-		height: 200px;
-	}
-	.navigation a{
-		font-size: 0.6em;
-		font-weight: 300px;
-	}
-
-	.content{
-		flex-direction: column;
-		align-items: center;
-		
-	}
+.more-details {
+  color: #3a6cf4;
+  text-decoration: none;
+  font-weight: 600;
 }
 
+.more-details:hover {
+  color: #601cfc;
+}
+
+.footer {
+  background-color: #3b090a;
+  color: #fff;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: #3a6cf4;
+}
+
+.footer .social-icon a {
+  color: #fff;
+  font-size: 1.3em;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.footer .social-icon a:hover {
+  color: #3a6cf4;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main h1 {
+    font-size: 2em;
+  }
+
+  .main-description {
+    font-size: 1em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .project-card {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
