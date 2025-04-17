@@ -37,7 +37,7 @@ a {
 }
 
 #backToTop:hover {
-  background-color: #0a49f6;
+  background-color: #272361;
 }
 
 
@@ -72,7 +72,7 @@ a {
 }
 .nav a {
   margin-left: 20px;
-  color: #3a6cf4;
+  color: #272361;
   font-weight: 500;
 }
 .nav a:hover {
@@ -100,7 +100,7 @@ a {
 }
 .btn {
   display: inline-block;
-  background: #3a6cf4;
+  background: #272361;
   padding: 10px 25px;
   color: #fff;
   border-radius: 25px;
