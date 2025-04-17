@@ -78,6 +78,45 @@ a {
 .nav a:hover {
   color: #601cfc;
 }
+.navbar {
+  background-color: rgba(255, 255, 255, 0.98);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-left {
+  desp
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #a259ff, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-right {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-right li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+header {
+  background: linear-gradient(to right, rgba(162, 89, 255, 0.85), rgba(255, 106, 61, 0.85));
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ظل ناعم أسفل الهيدر */
+  backdrop-filter: blur(4px); /* تأثير زجاجي خفيف */
+}
 .hero {
   text-align: center;
   padding: 5em 1em;
