@@ -9,6 +9,7 @@
 .logo {
   height: 50px;
   width: auto;
+  margin-left: 10px
 }
 
 body {
@@ -81,7 +82,7 @@ a {
   cursor: pointer;
 }
 .navbar {
-  background-color: rgb(7 15 28)
+  background-color: rgb(7 15 28);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -91,11 +92,8 @@ a {
   z-index: 100;
 }
 .nav-left {
-  font-weight: bold;
-  font-size: 1.5rem;
-  background: linear-gradient(45deg, #a259ff, #ff6a3d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
 }
 .nav-right {
   list-style: none;
@@ -227,4 +225,25 @@ header {
 }
 .footer span {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #0a1120;
+    padding: 1em;
+    border-radius: 10px;
+  }
+
+  .nav-right.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
