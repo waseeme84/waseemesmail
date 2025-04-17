@@ -72,9 +72,7 @@ a {
   color: #272361;
   font-weight: 500;
 }
-.nav a:hover {
-  color: #601cfc;
-}
+
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
