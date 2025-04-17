@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
+.logo {
+  heigh: 50px;
+  width: auto;
+}
+
 body {
   background: #0a1120;
   color: #fff;
@@ -50,7 +55,7 @@ a {
 }
 .divider {
   height: 4px;
-  background: linear-gradient(to right, #3a6cf4, #990000);
+  background: linear-gradient(to right, #272361, #990000);
   border-radius: 2px;
   margin: 4em auto;
   width: 60%;
@@ -175,11 +180,11 @@ a {
   margin-bottom: 0.5em;
 }
 .footer {
-  background: #3b090a;
+  background: ##000000;
   padding: 1em 0;
   text-align: center;
   color: #fff;
 }
 .footer span {
-  color: #3a6cf4;
+  color: #fff;
 }
