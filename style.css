@@ -79,6 +79,7 @@ a {
   font-size: 1.8rem;
   background: none;
   border: none;
+  color : #fff;
   cursor: pointer;
 }
 .navbar {
