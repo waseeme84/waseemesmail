@@ -11,15 +11,17 @@
 <body>
   <header class="header">
     <nav class="navbar">
-  <div class="nav-left">
-    <img src="image/my logo for site.png" class="logo"></div>
+     <div class="nav-left">
+      <img src="image/my logo for site.png" alt="Waseem Esmail">class="logo">
+      </div>
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul class="nav-right" id="navMenu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
- </nav>
+      <ul class="nav-right" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="hero">
     <img src="images/a.jpg" alt="Waseem Esmail" class="hero-img" />
     <h1 class="hero-title">Waseem Esmail</h1>
@@ -222,31 +224,48 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span>Copyright 2025 Waseem Esmael | Powered by Waseem Esmael</span></p>
+      <p>&copy; <span>Copyright 2025 Waseem Esmael | Powered by Waseem Esmael</span></p>
     </div>
   </footer>
-<button onclick="scrollToTop()" id="backToTop" title="Go to top">
-  <i class="fas fa-arrow-up"></i>
-</button>
-<script>
+<button id="backToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+ <script>
+
   const topBtn = document.getElementById("backToTop");
 
-  window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      topBtn.style.display = "block";
-    } else {
-      topBtn.style.display = "none";
-    }
-  };
+  window.addEventListener("scroll", () => {
+    topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  });
 
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
 </script>
-      <script>
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+ <script>
   function toggleMenu() {
     document.getElementById('navMenu').classList.toggle('show');
   }
   </script>
+<script>
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+<script>
+  window.onload = function () {
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname);
+    }
+    window.scrollTo(0, 0);
+  };
+</script>
 </body>
 </html>
