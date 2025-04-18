@@ -228,45 +228,6 @@
       <p>&copy; <span>Copyright 2025 Waseem Esmael | Powered by Waseem Esmael</span></p>
     </div>
   </footer>
-<button id="backToTop" title="Go to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
 
- <script>
-
-  const topBtn = document.getElementById("backToTop");
-
-  window.addEventListener("scroll", () => {
-    topBtn.style.display = window.scrollY > 300 ? "block" : "none";
-  });
-
-  topBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-});
-</script>
-<script>
-function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("show");
-}
-</script>
- <script>
-  function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('show');
-  }
-  </script>
-<script>
-  window.onload = function () {
-    window.scrollTo(0, 0);
-  };
-</script>
-<script>
-  window.onload = function () {
-    if (window.location.hash) {
-      history.replaceState(null, null, window.location.pathname);
-    }
-    window.scrollTo(0, 0);
-  };
-</script>
 </body>
 </html>
