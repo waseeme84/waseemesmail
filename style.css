@@ -36,6 +36,19 @@ a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s;
 }
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  background-color: #ff6a3d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
 #backToTop:hover {
   background-color: #272361;
 }
