@@ -62,11 +62,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.logo {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #3a6cf4;
-}
+
 .nav a {
   margin-left: 20px;
   color: #272361;
