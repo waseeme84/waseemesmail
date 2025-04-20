@@ -87,7 +87,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .nav-left .logo {
-  height: 40px;
+  height: 55px;
 }
 .nav-right {
   list-style: none;
@@ -102,7 +102,6 @@ a {
   font-weight: bold;
 }
 .menu-toggle {
-  display: none;
   font-size: 1.8rem;
   background: none;
   border: none;
@@ -240,7 +239,7 @@ h3 {
 @media (max-width: 768px) {
    .menu-toggle {
     display: block;
-    color: #333;
+    color: #FFF;
   }
   .nav-right {
     flex-direction: column;
