@@ -7,9 +7,8 @@
   font-family: 'Poppins', sans-serif;
 }
 .logo {
-  height: 100px;
+  height: 50px;
   width: auto;
-  margin-left: 10px
 }
 
 body {
@@ -35,7 +34,7 @@ a {
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s;
-
+}
 #backToTop:hover {
   background-color: #272361;
 }
@@ -63,6 +62,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #3a6cf4;
+}
 .nav a {
   margin-left: 20px;
   color: #272361;
@@ -74,11 +78,10 @@ a {
   font-size: 1.8rem;
   background: none;
   border: none;
-  color : #fff;
   cursor: pointer;
 }
 .navbar {
-  background-color: rgb(3 15 40);
+  background-color: rgb(7 15 28)
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -88,8 +91,11 @@ a {
   z-index: 100;
 }
 .nav-left {
-  display: flex;
-  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #a259ff, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-right {
   list-style: none;
@@ -100,7 +106,7 @@ a {
 }
 .nav-right li a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-weight: bold;
 }
 header {
@@ -206,7 +212,7 @@ header {
   color: #000;
   padding: 1em 2em;
   border-radius: 10px;
-  text-align: justify;
+  text-align: center;
 }
 .card-icon {
   font-size: 2em;
@@ -221,25 +227,4 @@ header {
 }
 .footer span {
   color: #fff;
-}
-
-@media (max-width: 768px) {
-  .nav-right {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: #0a1120;
-    padding: 1em;
-    border-radius: 10px;
-  }
-
-  .nav-right.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
+} 
