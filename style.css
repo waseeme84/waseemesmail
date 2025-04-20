@@ -84,9 +84,11 @@ a {
 .nav-left {
   font-weight: bold;
   font-size: 1.5rem;
-  background: linear-gradient(45deg, #a259ff, #ff6a3d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.nav-left .logo {
+  height: 40px;
 }
 .nav-right {
   list-style: none;
