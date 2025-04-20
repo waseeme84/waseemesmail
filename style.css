@@ -227,6 +227,16 @@ header {
 .footer span {
   color: #fff;
 } 
+h3 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 @media (max-width: 768px) {
   .nav-right {
     flex-direction: column;
@@ -242,10 +252,11 @@ header {
     align-items: center;
   }
   .project-card {
-    width: 85%;
+    width: 70%;
+    align-
   }
   .project-card img {
-        width: 80%;
+    width: 80%;
   }
   header h1 {
     font-size: 1.8rem;
