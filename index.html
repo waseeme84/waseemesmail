@@ -22,7 +22,7 @@
   <div class="nav-left">
 <img src="images/my-logo.svg" class="logo" alt="Logo">
   </div>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul class="nav-right" id="navMenu">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -250,6 +250,8 @@
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+</script>
+<script>
   function toggleMenu() {
     document.getElementById('navMenu').classList.toggle('show');
   }
