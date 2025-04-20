@@ -238,6 +238,10 @@ h3 {
     unicode-bidi: isolate;
 }
 @media (max-width: 768px) {
+   .menu-toggle {
+    display: block;
+    color: #333;
+  }
   .nav-right {
     flex-direction: column;
     align-items: flex-start;
