@@ -280,15 +280,15 @@ h3 {
         width: 100%; /*确保图片自适应*/
         height: auto;
     }
-.social-icons a i {
-    font-size: 1.8rem; /* حجم أكبر قليلاً */
-    color: #f8f8f8; /* لون أبيض نقي */
-    margin: 0 12px;
-    transition: all 0.3s ease;
-}
+    .social-icons a i {
+        font-size: 1.8rem; /* حجم أكبر قليلاً */
+        color: #f8f8f8; /* لون أبيض نقي */
+        margin: 0 12px;
+        transition: all 0.3s ease;
+    }
 
-.social-icons a:hover i {
-    color: #990000; /* يتغير إلى اللون الأحمر عند المرور */
-    transform: translateY(-3px); /* تأثير طفيف */
-}
+    .social-icons a:hover i {
+       color: #990000; /* يتغير إلى اللون الأحمر عند المرور */
+       transform: translateY(-3px); /* تأثير طفيف */
+    }
 }
