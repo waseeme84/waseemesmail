@@ -237,40 +237,47 @@ h3 {
     unicode-bidi: isolate;
 }
 @media (max-width: 768px) {
-   .menu-toggle {
-    display: block;
-    color: #FFF;
-  }
-  .nav-right {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .logo {
-  heigh: 5px;
-  width: auto;
-  }
-  .projects {
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-card {
-    width: 70%;
-    align-
-  }
-  .project-card img {
-    width: 80%;
-  }
-  header h1 {
-    font-size: 1.8rem;
-  }
-  .nav-left {
-    font-size: 1.2rem;
-  }
-  section {
-    padding: 1rem 1rem;
-  }
-  form {
-    width: 90%;
-  }
+    .menu-toggle {
+        display: block;
+        color: #FFF;
+    }
+
+    .nav-right {
+        display: none; /* يخفي القائمة افتراضيًا */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgb(7, 15, 28);
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .nav-right.show {
+        display: flex; /* يعرض القائمة عند النقر */
+    }
+
+    .logo {
+        height: 40px; /* حجم أصغر للشعار على الجوال */
+    }
+
+    .hero-title {
+        font-size: 2em; /* حجم خط أصغر للعنوان */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* عمود واحد للبطاقات على الجوال */
+        gap: 1.5em;
+    }
+
+    .project-card {
+        width: 100%; /* تأكد من أن العرض 100% */
+    }
+
+    .project-card img {
+        width: 100%; /*确保图片自适应*/
+        height: auto;
+    }
 }
