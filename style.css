@@ -3,17 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #0a1120;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .hero-title, .section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
 
 .logo {
   height: 50px;
   width: auto;
-}
-
-body {
-  background: #0a1120;
-  color: #fff;
 }
 
 a {
@@ -95,7 +101,10 @@ a {
 .nav-right li a {
   text-decoration: none;
   color: #FFF;
-  font-weight: bold;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
   transition: color 0.3s;
 }
 
@@ -109,11 +118,16 @@ a {
   border: none;
   cursor: pointer;
   display: none;
+  color: #FFF;
 }
 
 .hero {
   text-align: center;
   padding: 5em 1em;
+  background: linear-gradient(to right, rgba(162, 89, 255, 0.85), rgba(255, 106, 61, 0.85));
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
 }
 
 .hero-img {
@@ -126,15 +140,20 @@ a {
 }
 
 .hero-title {
-  color: #990000;
-  font-size: 2.5em;
+  font-size: 3rem;
+  background: linear-gradient(45deg, #990000, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5em;
 }
 
 .hero-subtitle {
-  font-size: 1.2em;
+  font-size: 1.3rem;
+  color: #e2e8f0;
+  font-weight: 300;
+  letter-spacing: 1px;
   margin-bottom: 1em;
-  color: #ccc;
 }
 
 .btn {
@@ -147,6 +166,7 @@ a {
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn:hover {
@@ -180,8 +200,8 @@ a {
 
 .section-title {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #990000;
 }
 
@@ -194,11 +214,12 @@ a {
 }
 
 .section-text {
-  max-width: 700px;
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  line-height: 1.8;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  line-height: 1.8;
-  color: #ccc;
 }
 
 .projects-grid {
@@ -231,9 +252,10 @@ a {
 }
 
 .project-card h3 {
-  margin: 0.5em 0;
-  font-size: 1.1em;
-  color: #333;
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin: 1rem 0;
+  font-weight: 600;
 }
 
 .project-link {
@@ -248,19 +270,101 @@ a {
   color: #990000;
 }
 
-.card {
-  background: #fff;
-  color: #000;
-  padding: 2em;
-  border-radius: 10px;
+.contact-subtitle {
   text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+  font-style: italic;
 }
 
-.card p {
-  margin: 0.5em 0;
-  font-size: 1.1em;
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background: linear-gradient(145deg, #1a2238, #0a1120);
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #2d3748;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: #990000;
+}
+
+.contact-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(45deg, #990000, #ff6a00);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-card p {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-link {
+  display: inline-block;
+  background: #990000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  background: #ff0000;
+  transform: translateY(-2px);
+}
+
+.social-contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-contact a {
+  width: 50px;
+  height: 50px;
+  background: #2d3748;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.3rem;
+}
+
+.social-contact a:hover {
+  background: #990000;
+  transform: scale(1.1);
 }
 
 .footer {
@@ -279,7 +383,6 @@ a {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    color: #FFF;
   }
 
   .nav-right {
@@ -304,7 +407,25 @@ a {
   }
 
   .hero-title {
-    font-size: 2em;
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
   }
 
   .projects-grid {
